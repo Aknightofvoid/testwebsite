@@ -1,68 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#000000">
-    <meta name="description" content="Web site created using CloudBase Webify">
-    <title>Hello Webify！</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-                'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-                sans-serif;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
-        code {
-            font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-                monospace;
-        }
-        .App {
-            text-align: center;
-        }
-
-        .App-logo {
-            height: 40vmin;
-            pointer-events: none;
-        }
-
-        @media (prefers-reduced-motion: no-preference) {
-            .App-logo {
-                animation: App-logo-spin infinite 20s linear;
-            }
-        }
-
-        .App-header {
-            background-color: #efefef;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            font-size: calc(10px + 2vmin);
-            color: black;
-        }
-
-        .App-link {
-            color: #108ee9;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学成在线</title>
+    <link rel="stylesheet" href="./css/index.css">
 </head>
-
 <body>
-    <div id="root">
-        <div class="App">
-            <header class="App-header">
-                <img src="https://main.qcloudimg.com/raw/2f3b21706c37e8685efe5c60b26ceb24.png" class="App-logo" alt="logo">
-                <p>Welcome to Webify！</p>
-                <a class="App-link" href="https://webify.cloudbase.net/"
-                    target="_blank" rel="noopener noreferrer">webify.cloudbase.net</a>
-            </header>
+    <!-- header头部 -->
+    <div class="header wrapper">
+        <!-- logo -->
+        <img class="logo" src="./images/logo.png">
+        <!-- 导航 -->
+        <ul class="nav">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">课程</a></li>
+            <li><a href="#">职业规划</a></li>
+        </ul>
+        <!-- 搜索框 -->
+        <div class="search">
+            <input type="text" placeholder="输入关键词">
+            <button></button>
+        </div>
+        <!-- 用户 -->
+        <div class="user">
+            <img src="./images/user.png">
+            <span>qq-leishui</span>
+        </div>
+
+    </div>
+    <!-- banner轮播图 -->
+    <div class="banner">
+        <div class="wrapper">
+
+            <div class="left">
+                <ul class="nav">
+                    <li><a href="#">前端开发<span>></span></a></li>
+                    <li><a href="#">前端开发<span>></span></a></li>
+                    <li><a href="#">前端开发<span>></span></a></li>
+                    <li><a href="#">前端开发<span>></span></a></li>
+                    <li><a href="#">前端开发<span>></span></a></li>
+                    <li><a href="#">前端开发<span>></span></a></li>
+                    <li><a href="#">前端开发<span>></span></a></li>
+                    <li><a href="#">前端开发<span>></span></a></li>
+                    <li><a href="#">前端开发<span>></span></a></li>
+                </ul>
+            </div>
+            <div class="right">
+                <div class="content1 clearfix">
+                    <h2>我的课程表</h2>
+                </div>
+                <ul class="content2">
+                    <li>
+                        <a href="#">
+                            <div>
+                            <span>继续学习</span>
+                            <span>程序语言设计</span>
+                            </div>
+                            <div>正在学习-使用对象</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div>
+                            <span>继续学习</span>
+                            <span>程序语言设计</span>
+                            </div>
+                            <div>正在学习-使用对象</div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div>
+                            <span>继续学习</span>
+                            <span>程序语言设计</span>
+                            </div>
+                            <div>正在学习-使用对象</div>
+                        </a>
+                    </li>
+
+                </ul>
+                <a class="content3" href="#">
+                    <span>全部课程</span>
+                </a>
+            </div>
+
+
         </div>
     </div>
-</body>
 
+    <!-- ct1 -->
+    <div class="ct1 wrapper clearfix">
+        <ul class="hd">
+            <li><a href="#">精品推荐</a></li>
+            <li><a href="#">JQuery</a></li>
+            <li><a href="#">JQuery</a></li>
+            <li><a href="#">JQuery</a></li>
+            <li><a href="#">JQuery</a></li>
+            <li><a href="#">JQuery</a></li>
+            <li><a href="#">JQuery</a></li>
+        </ul>
+        <a href="#">修改兴趣</a>
+    </div>
+
+    <!-- ct2 -->
+    <div class="ct2 wrapper clearfix">
+        <div class="hd clearfix">
+            <span>精品推荐</span>
+            <a href="#">查看全部</a>
+        </div>
+
+        <div class="ct">
+            <ul class="course">
+                <li><a href="#">
+                    <img src="./images/course08.png">
+                    <h3>Think PHP 5.0 博客系统实战项目演练</h3>
+                    <p><span>高级</span><span> • 1125人在学习</span></p>
+                </a></li>
+                <li><a href="#">
+                    <img src="./images/course08.png">
+                    <h3>Think PHP 5.0 博客系统实战项目演练</h3>
+                    <p><span>高级</span><span> • 1125人在学习</span></p>
+                </a></li>
+                <li><a href="#">
+                    <img src="./images/course08.png">
+                    <h3>Think PHP 5.0 博客系统实战项目演练</h3>
+                    <p><span>高级</span><span> • 1125人在学习</span></p>
+                </a></li>
+                <li><a href="#">
+                    <img src="./images/course08.png">
+                    <h3>Think PHP 5.0 博客系统实战项目演练</h3>
+                    <p><span>高级</span><span> • 1125人在学习</span></p>
+                </a></li>
+                <li><a href="#">
+                    <img src="./images/course08.png">
+                    <h3>Think PHP 5.0 博客系统实战项目演练</h3>
+                    <p><span>高级</span><span> • 1125人在学习</span></p>
+                </a></li>
+                <li><a href="#">
+                    <img src="./images/course08.png">
+                    <h3>Think PHP 5.0 博客系统实战项目演练</h3>
+                    <p><span>高级</span><span> • 1125人在学习</span></p>
+                </a></li>
+                <li><a href="#">
+                    <img src="./images/course08.png">
+                    <h3>Think PHP 5.0 博客系统实战项目演练</h3>
+                    <p><span>高级</span><span> • 1125人在学习</span></p>
+                </a></li>
+                <li><a href="#">
+                    <img src="./images/course08.png">
+                    <h3>Think PHP 5.0 博客系统实战项目演练</h3>
+                    <p><span>高级</span><span> • 1125人在学习</span></p>
+                </a></li>
+                <li><a href="#">
+                    <img src="./images/course08.png">
+                    <h3>Think PHP 5.0 博客系统实战项目演练</h3>
+                    <p><span>高级</span><span> • 1125人在学习</span></p>
+                </a></li>
+                <li><a href="#">
+                    <img src="./images/course08.png">
+                    <h3>Think PHP 5.0 博客系统实战项目演练</h3>
+                    <p><span>高级</span><span> • 1125人在学习</span></p>
+                </a></li>
+                
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="wrapper">
+            <div class="left">
+                <img src="./images/logo.png">
+                <p>学成在线致力于普及中国最好的教育它与中国一流大学和机构合作提供在线课程。
+                    <br>
+                    © 2017年XTCG Inc.保留所有权利。-沪ICP备15025210号
+                </p>
+                <a href="#">下载APP</a>
+            </div>
+
+            <div class="right">
+                <dl>
+                    <dt>合作伙伴</dt>
+                    <dd><a href="#">合作机构</a></dd>
+                    <dd><a href="#">合作机构</a></dd>
+                </dl>
+                <dl>
+                    <dt>合作伙伴</dt>
+                    <dd><a href="#">合作机构</a></dd>
+                    <dd><a href="#">合作机构</a></dd>
+                </dl>
+                <dl>
+                    <dt>合作伙伴</dt>
+                    <dd><a href="#">合作机构</a></dd>
+                    <dd><a href="#">合作机构</a></dd>
+                </dl>
+
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
 </html>
